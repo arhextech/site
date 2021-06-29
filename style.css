@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #fff;
+}
+
+header{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    z-index: 2;
+    background: #fff;
+    border-bottom: 1px solid #666;
+    transition: opacity 300ms ease-in-out;
+}
+
+header .left{
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+header a{
+    color: dodgerblue;
+    font-size: 30px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .logo{
+    width: 200px;
+    height: 50px;
+}
+
+header .right{
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.nav-none{
+    transition: 0.3s;
+    display: none;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 0;
+    height: 0;
+    background: #222;
+    overflow: hidden;
+}
+
+.nav-block{
+    transition: 0.3s;
+    display: block;
+    position: fixed;
+    top: 75px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 75px);
+    background: #222;
+    z-index: 99;
+    text-align: center;
+}
+
+.nav-block a{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s;
+    text-align: center;
+}
+
+.nav-block a:hover{
+    transition: 0.6s;
+    background: #111;
+}
+
+.icontainer{
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    max-height: auto;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.icontainer img{
+    width: 100%;
+}
+
+.icontainer .irow{
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+}
+
+.icontainer .irow .icol{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+.saying{
+  padding: 20px;
+  text-align: center;
+}
+
+.saying .img{
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  align-content: center;
+  vertical-align: middle;
+}
+
+.saying .img p{
+  margin-top: 15px;
+  transition: 00.6s;
+}
+
+.saying:hover .img p{
+    color: dodgerblue;
+    transition: 00.6s;
+}
+
+.saying .img img{
+  width: 56px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contents{
+    position: relative;
+    width: 100%;
+    padding: 30px 10%;
+    word-wrap: break-word;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.contents p{
+    font-size: larger;
+    line-height: 40px;
+    background: #f1f1f1;
+    padding: 5px;
+}
+
+.contents p::before{
+    content: "'";
+    color: dodgerblue;
+    background: dodgerblue;
+    margin-right: 10px;
+}
+
+.contents ul{
+    font-size: larger;
+    margin-left: 30px;
+    line-height: 40px;
+}
+
+.contents ul {
+    list-style: none; /* Remove default bullets */
+}
+
+.contents a {
+    text-decoration: none;
+    color: dodgerblue;
+    font-weight: bold;
+}
+  
+.contents ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: dodgerblue; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    font-size: larger;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 2em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.price{
+    padding: 30px 10%;
+}
+
+.pricing{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.pricing tr td, .pricing tr th{
+    text-align: center;
+    padding: 10px;
+}
+
+.pricing tr td{
+    border: 1px solid black;
+}
+
+.pricing tr:nth-child(even){
+    background: #f1f1f1;
+}
+
+.pricing tr th{
+    border: 1px solid black;
+    background: dodgerblue;
+    color: #fff;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    padding: 10px 10%;
+    background: #222;
+    color: #fff;
+}
